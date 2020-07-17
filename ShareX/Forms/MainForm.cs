@@ -1304,14 +1304,14 @@ namespace ShareX
         private void MainForm_VisibleChanged(object sender, EventArgs e)
         {
 #if !DEBUG
-            if (Visible)
-            {
-                tsbDonate.StartAnimation();
-            }
-            else
-            {
-                tsbDonate.StopAnimation();
-            }
+            //if (Visible)
+            //{
+            //    tsbDonate.StartAnimation();
+            //}
+            //else
+            //{
+            //    tsbDonate.StopAnimation();
+            //}
 #endif
         }
 
