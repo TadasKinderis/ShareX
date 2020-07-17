@@ -117,7 +117,6 @@
             this.tsmiTestFileUpload = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiTestURLShortener = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiTestURLSharing = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsbDonate = new ShareX.HelpersLib.ToolStripButtonColorAnimation();
             this.tsbAbout = new System.Windows.Forms.ToolStripButton();
             this.tssMain3 = new System.Windows.Forms.ToolStripSeparator();
             this.cmsTaskInfo = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -404,6 +403,7 @@
             resources.ApplyResources(this.tsMain, "tsMain");
             this.tsMain.DrawCustomBorder = true;
             this.tsMain.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.tsMain.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.tsMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsddbCapture,
             this.tsddbUpload,
@@ -422,7 +422,6 @@
             this.tsbImageHistory,
             this.tsbNews,
             this.tsddbDebug,
-            this.tsbDonate,
             this.tsbAbout,
             this.tssMain3});
             this.tsMain.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
@@ -995,14 +994,6 @@
             resources.ApplyResources(this.tsmiTestURLSharing, "tsmiTestURLSharing");
             this.tsmiTestURLSharing.Click += new System.EventHandler(this.tsmiTestURLSharing_Click);
             // 
-            // tsbDonate
-            // 
-            this.tsbDonate.AnimationSpeed = 0.8F;
-            this.tsbDonate.Image = global::ShareX.Properties.Resources.heart;
-            resources.ApplyResources(this.tsbDonate, "tsbDonate");
-            this.tsbDonate.Name = "tsbDonate";
-            this.tsbDonate.Click += new System.EventHandler(this.tsbDonate_Click);
-            // 
             // tsbAbout
             // 
             this.tsbAbout.Image = global::ShareX.Properties.Resources.crown;
@@ -1017,6 +1008,7 @@
             // 
             // cmsTaskInfo
             // 
+            this.cmsTaskInfo.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsTaskInfo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiShowErrors,
             this.tsmiStopUpload,
@@ -1562,6 +1554,7 @@
             // 
             // cmsTray
             // 
+            this.cmsTray.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsTray.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiTrayCapture,
             this.tsmiTrayUpload,
@@ -2266,7 +2259,6 @@
             // 
             resources.ApplyResources(this.pToolbars, "pToolbars");
             this.pToolbars.Controls.Add(this.tsMain);
-            this.pToolbars.Controls.Add(this.tsSocialButtons);
             this.pToolbars.Name = "pToolbars";
             // 
             // tsSocialButtons
@@ -2493,7 +2485,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiImageEffects;
         private System.Windows.Forms.ToolStripMenuItem tsmiTrayImageEffects;
         private System.Windows.Forms.ToolStripButton tsbAbout;
-        private ShareX.HelpersLib.ToolStripButtonColorAnimation tsbDonate;
         private System.Windows.Forms.ToolStripMenuItem tsmiMonitorTest;
         private System.Windows.Forms.ToolStripMenuItem tsmiTrayMonitorTest;
         private System.Windows.Forms.ToolStripMenuItem tsmiTrayShow;
